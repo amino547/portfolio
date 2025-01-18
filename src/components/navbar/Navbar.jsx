@@ -5,9 +5,9 @@ import Sidebar from "../sidebar/Sidebar";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <Sidebar/>
+      <Sidebar />
       <div className="wrapper">
-        {/* Animation on the text "Amen Allah" */}
+        {/* Animation on the text "Deep Web" */}
         <motion.span
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -15,21 +15,41 @@ const Navbar = () => {
         >
           Deep Web
         </motion.span>
-        
-        {/* Social media links with images */}
+
+        {/* Social media links with images and animation */}
         <div className="social">
-          <a href="https://www.facebook.com/share/14VhoiCFqF/?mibextid=LQQJ4d" aria-label="Facebook">
+          <motion.a
+            href="https://www.facebook.com/share/14VhoiCFqF/?mibextid=LQQJ4d"
+            aria-label="Facebook"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <img src="/facebook.png" alt="Facebook logo" />
-          </a>
-          <a href="instagram" aria-label="Instagram">
+          </motion.a>
+          <motion.a
+            href="instagram"
+            aria-label="Instagram"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <img src="/instagram.png" alt="Instagram logo" />
-          </a>
-          <a href="youtube" aria-label="YouTube">
-            <img src="/youtube.png" alt="YouTube logo" />
-          </a>
-          <a href="dribbble" aria-label="Dribbble">
-            <img src="/dribbble.png" alt="Dribbble logo" />
-          </a>
+          </motion.a>
+          <motion.a
+            href="https://github.com/amino547"
+            aria-label="github"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <img src="/github.png" alt="github logo" />
+          </motion.a>
+          <motion.a
+            href="https://www.linkedin.com/in/amine-allah-gharbi-60a05a344/"
+            aria-label="linkedin"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <img src="/linkedin.png" alt="linkedin logo" />
+          </motion.a>
         </div>
       </div>
     </div>
@@ -37,3 +57,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

@@ -94,11 +94,12 @@ const Amen = () => {
         Read no life without work and diligence
       </motion.div>
       <div className="imageContainer">
-        <img src="/an.jpg" alt="Amen Allah Gharbi" />
+        <img src="/D.jpg" alt="Amen Allah Gharbi" />
       </div>
     </div>
   );
 };
 
 export default Amen;
+
 

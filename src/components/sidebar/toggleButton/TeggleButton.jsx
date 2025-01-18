@@ -8,7 +8,7 @@ const ToggleButton = ({ setOpen }) => {
         {/* First path (top bar) */}
         <motion.path 
           strokeWidth="3" 
-          stroke='black' 
+          stroke='white' 
           strokeLinecap='round'
           variants={{
             closed: { d: "M 2 2.5 L 20 2.5" }, // horizontal line
@@ -19,7 +19,7 @@ const ToggleButton = ({ setOpen }) => {
         {/* Second path (middle bar) */}
         <motion.path
           strokeWidth="3"
-          stroke='black'
+          stroke='white'
           strokeLinecap='round'
           d="M 2 9.423 L 20 9.423"
           variants={{
@@ -31,7 +31,7 @@ const ToggleButton = ({ setOpen }) => {
         {/* Third path (bottom bar) */}
         <motion.path
           strokeWidth="3"
-          stroke='black'
+          stroke='white'
           strokeLinecap='round'
           variants={{
             closed: { d: "M 2 16.146 L 20 16.346" }, // horizontal line
